@@ -1,0 +1,136 @@
+body {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#no-padding {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+input {
+    margin-right: 10px;
+}
+  
+input:invalid ~ span:after {
+    content: '✖';
+    padding-left: 5px;
+    position: absolute;
+}
+  
+input:valid ~ span:after {
+    content: '✓';
+    padding-left: 5px;
+    position: absolute;
+}
+
+.search-container {
+    margin-top: 50px;
+    display: flex;
+}
+
+.search-button {
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 13px 18px;
+}
+
+.search-button:hover {
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    margin-right: 5px;
+    padding: 13px 18px;
+}
+
+.button {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.remove {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 1px solid red;
+}
+
+.remove:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 1px solid red;
+}
+
+input[type=search] {
+    border: 1px solid grey;
+}
+
+a {
+    cursor: pointer;
+}
+
+.search-container a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.selected {
+    background-color: #CEFEFF!important;
+}
+
+table {
+    margin-top: 25px;
+}
+
+.thousand, .five-hundred, .two-hundred-fifty, .hundred, .twenty {
+    padding: 15px 27px;
+    color: grey;
+    font-weight: bold;
+}
+
+.thousand:hover {
+    padding: 15px 27px;
+    color: grey;
+    font-weight: bold;
+}
+
+.five-hundred:hover {
+    padding: 15px 27px;
+    color: grey;
+    font-weight: bold;
+}
+
+.two-hundred-fifty:hover {
+    padding: 15px 27px;
+    color: grey;
+    font-weight: bold;
+}
+
+.twenty:hover {
+    padding: 15px 27px;
+    color: grey;
+    font-weight: bold;
+}
+
+.hundred:hover {
+    padding: 15px 27px;
+    color: grey;
+    font-weight: bold;
+}
+
+.text-select {
+    padding-top: 15px;
+}
+
+.menuitemshow {
+    background-color: red;
+}

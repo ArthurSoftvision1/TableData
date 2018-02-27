@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>UI-Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
+        
+        <link rel="stylesheet" href="./css/custom.css" />
+        
+        <link rel="icon" href="./images/favicon.ico">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="#">
+            <header>
+                <form>
+                    <div id="no-padding" class="row">
+                        <div class="search-container">
+                            <input type="search" id="mySearch" name="q" placeholder="Search" size="15" onkeyup="searchFunc()">
+                            <a id="search" class="search-button" >Search</a>
+                            <p id="display-number" class="text-select">Select checkboxes</p>
+                            <a id="twenty" class="rows button twenty" onclick="getTwenty()">Load 20 rows</a>
+                            <a id="hundred" class="rows button hundred" onclick="getHundred()">Load 100 rows</a>
+                            <a id="two-hundred-fifty" class="rows button two-hundred-fifty" onclick="getTwoHundredFifty()">Load 250 rows</a>
+                            <a id="five-hundred" class="rows button five-hundred" onclick="fiveHundred()">Load 500 rows</a>
+                            <a id="one-thousand" class="rows button thousand" onclick="oneThousand()">Load 1000 rows</a>
+                            <a id="remove" class="button remove">Remove rows</a>
+                        </div>
+                    </div>
+                </form>
+            </header>
+            <hr/>
+            <div>
+                <form>
+                    <table class="table table-bordered table-striped" id="employee_table">
+                        <tr id="header" onclick="selectRow()">
+                            <th><input type="checkbox" name="check" value="checkbox" class="selectAll" disabled="disabled"></th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Owner</th>
+                            <th>Type</th>
+                            <th>Created on</th>
+                            <th>Last modified</th>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <script src="./js/displayContent.js"></script>
+        <script src="./js/search.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
+</html>
